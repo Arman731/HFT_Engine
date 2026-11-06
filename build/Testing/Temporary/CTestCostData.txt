@@ -1,0 +1,8 @@
+OrderValidation.AcceptsValidOrder 4 0.00210303
+OrderValidation.RejectsZeroQuantity 3 0.00293713
+OrderValidation.RejectsNegativePrice 3 0.00301153
+OrderValidation.RejectsDuplicateOrderID 3 0.00270667
+OrderValidation.RejectsInvalidSide 3 0.00293143
+MatchingEngine.BuyOrderMatchesSellOrder 2 0.0048873
+MatchingEngine.BuyOrderPartiallyExecutes 1 0.0088844
+---

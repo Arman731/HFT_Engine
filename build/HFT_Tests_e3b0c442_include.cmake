@@ -1,0 +1,5 @@
+if(EXISTS "D:/Study/UG/PROJECTS/HFT_Engine/build/HFT_Tests_e3b0c442_tests.cmake")
+  include("D:/Study/UG/PROJECTS/HFT_Engine/build/HFT_Tests_e3b0c442_tests.cmake")
+else()
+  add_test(HFT_Tests_NOT_BUILT HFT_Tests_NOT_BUILT)
+endif()

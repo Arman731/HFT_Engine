@@ -1,13 +1,13 @@
-Start testing: Nov 06 08:21 India Standard Time
+Start testing: Nov 06 09:31 India Standard Time
 ----------------------------------------------------------
-1/7 Testing: MatchingEngine.BuyOrderMatchesSellOrder
-1/7 Test: MatchingEngine.BuyOrderMatchesSellOrder
-Command: "D:/Study/UG/PROJECTS/HFT_Engine/build/HFT_Tests.exe" "--gtest_filter=MatchingEngine.BuyOrderMatchesSellOrder" "--gtest_also_run_disabled_tests"
-Directory: D:/Study/UG/PROJECTS/HFT_Engine/build
-"MatchingEngine.BuyOrderMatchesSellOrder" start time: Nov 06 08:21 India Standard Time
+1/15 Testing: MatchingEngine.BuyOrderMatchesSellOrder
+1/15 Test: MatchingEngine.BuyOrderMatchesSellOrder
+Command: "D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/HFT_Tests.exe" "--gtest_filter=MatchingEngine.BuyOrderMatchesSellOrder" "--gtest_also_run_disabled_tests"
+Directory: D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build
+"MatchingEngine.BuyOrderMatchesSellOrder" start time: Nov 06 09:31 India Standard Time
 Output:
 ----------------------------------------------------------
-Running main() from D:/Study/UG/PROJECTS/HFT_Engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Running main() from D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
 Note: Google Test filter = MatchingEngine.BuyOrderMatchesSellOrder
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
@@ -23,18 +23,234 @@ Note: Google Test filter = MatchingEngine.BuyOrderMatchesSellOrder
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"MatchingEngine.BuyOrderMatchesSellOrder" end time: Nov 06 08:21 India Standard Time
+"MatchingEngine.BuyOrderMatchesSellOrder" end time: Nov 06 09:31 India Standard Time
 "MatchingEngine.BuyOrderMatchesSellOrder" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/7 Testing: MatchingEngine.BuyOrderPartiallyExecutes
-2/7 Test: MatchingEngine.BuyOrderPartiallyExecutes
-Command: "D:/Study/UG/PROJECTS/HFT_Engine/build/HFT_Tests.exe" "--gtest_filter=MatchingEngine.BuyOrderPartiallyExecutes" "--gtest_also_run_disabled_tests"
-Directory: D:/Study/UG/PROJECTS/HFT_Engine/build
-"MatchingEngine.BuyOrderPartiallyExecutes" start time: Nov 06 08:21 India Standard Time
+2/15 Testing: MatchingEngine.MatchesBestPriceFirst
+2/15 Test: MatchingEngine.MatchesBestPriceFirst
+Command: "D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/HFT_Tests.exe" "--gtest_filter=MatchingEngine.MatchesBestPriceFirst" "--gtest_also_run_disabled_tests"
+Directory: D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build
+"MatchingEngine.MatchesBestPriceFirst" start time: Nov 06 09:31 India Standard Time
 Output:
 ----------------------------------------------------------
-Running main() from D:/Study/UG/PROJECTS/HFT_Engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Running main() from D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MatchingEngine.MatchesBestPriceFirst
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MatchingEngine
+[ RUN      ] MatchingEngine.MatchesBestPriceFirst
+[       OK ] MatchingEngine.MatchesBestPriceFirst (0 ms)
+[----------] 1 test from MatchingEngine (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"MatchingEngine.MatchesBestPriceFirst" end time: Nov 06 09:31 India Standard Time
+"MatchingEngine.MatchesBestPriceFirst" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/15 Testing: MatchingEngine.MatchesOldestOrderFirst
+3/15 Test: MatchingEngine.MatchesOldestOrderFirst
+Command: "D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/HFT_Tests.exe" "--gtest_filter=MatchingEngine.MatchesOldestOrderFirst" "--gtest_also_run_disabled_tests"
+Directory: D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build
+"MatchingEngine.MatchesOldestOrderFirst" start time: Nov 06 09:31 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MatchingEngine.MatchesOldestOrderFirst
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MatchingEngine
+[ RUN      ] MatchingEngine.MatchesOldestOrderFirst
+[       OK ] MatchingEngine.MatchesOldestOrderFirst (0 ms)
+[----------] 1 test from MatchingEngine (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"MatchingEngine.MatchesOldestOrderFirst" end time: Nov 06 09:31 India Standard Time
+"MatchingEngine.MatchesOldestOrderFirst" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/15 Testing: MatchingEngine.ExecutesAgainstMultipleOrders
+4/15 Test: MatchingEngine.ExecutesAgainstMultipleOrders
+Command: "D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/HFT_Tests.exe" "--gtest_filter=MatchingEngine.ExecutesAgainstMultipleOrders" "--gtest_also_run_disabled_tests"
+Directory: D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build
+"MatchingEngine.ExecutesAgainstMultipleOrders" start time: Nov 06 09:31 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MatchingEngine.ExecutesAgainstMultipleOrders
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MatchingEngine
+[ RUN      ] MatchingEngine.ExecutesAgainstMultipleOrders
+[       OK ] MatchingEngine.ExecutesAgainstMultipleOrders (0 ms)
+[----------] 1 test from MatchingEngine (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"MatchingEngine.ExecutesAgainstMultipleOrders" end time: Nov 06 09:31 India Standard Time
+"MatchingEngine.ExecutesAgainstMultipleOrders" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/15 Testing: MatchingEngine.CancelsBuyOrder
+5/15 Test: MatchingEngine.CancelsBuyOrder
+Command: "D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/HFT_Tests.exe" "--gtest_filter=MatchingEngine.CancelsBuyOrder" "--gtest_also_run_disabled_tests"
+Directory: D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build
+"MatchingEngine.CancelsBuyOrder" start time: Nov 06 09:31 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MatchingEngine.CancelsBuyOrder
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MatchingEngine
+[ RUN      ] MatchingEngine.CancelsBuyOrder
+[       OK ] MatchingEngine.CancelsBuyOrder (0 ms)
+[----------] 1 test from MatchingEngine (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"MatchingEngine.CancelsBuyOrder" end time: Nov 06 09:31 India Standard Time
+"MatchingEngine.CancelsBuyOrder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/15 Testing: MatchingEngine.CancelsSellOrder
+6/15 Test: MatchingEngine.CancelsSellOrder
+Command: "D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/HFT_Tests.exe" "--gtest_filter=MatchingEngine.CancelsSellOrder" "--gtest_also_run_disabled_tests"
+Directory: D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build
+"MatchingEngine.CancelsSellOrder" start time: Nov 06 09:31 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MatchingEngine.CancelsSellOrder
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MatchingEngine
+[ RUN      ] MatchingEngine.CancelsSellOrder
+[       OK ] MatchingEngine.CancelsSellOrder (0 ms)
+[----------] 1 test from MatchingEngine (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"MatchingEngine.CancelsSellOrder" end time: Nov 06 09:31 India Standard Time
+"MatchingEngine.CancelsSellOrder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/15 Testing: MatchingEngine.RejectsCancellationOfUnknownOrder
+7/15 Test: MatchingEngine.RejectsCancellationOfUnknownOrder
+Command: "D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/HFT_Tests.exe" "--gtest_filter=MatchingEngine.RejectsCancellationOfUnknownOrder" "--gtest_also_run_disabled_tests"
+Directory: D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build
+"MatchingEngine.RejectsCancellationOfUnknownOrder" start time: Nov 06 09:31 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MatchingEngine.RejectsCancellationOfUnknownOrder
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MatchingEngine
+[ RUN      ] MatchingEngine.RejectsCancellationOfUnknownOrder
+[       OK ] MatchingEngine.RejectsCancellationOfUnknownOrder (0 ms)
+[----------] 1 test from MatchingEngine (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"MatchingEngine.RejectsCancellationOfUnknownOrder" end time: Nov 06 09:31 India Standard Time
+"MatchingEngine.RejectsCancellationOfUnknownOrder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/15 Testing: MatchingEngine.CancelsPartiallyFilledOrder
+8/15 Test: MatchingEngine.CancelsPartiallyFilledOrder
+Command: "D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/HFT_Tests.exe" "--gtest_filter=MatchingEngine.CancelsPartiallyFilledOrder" "--gtest_also_run_disabled_tests"
+Directory: D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build
+"MatchingEngine.CancelsPartiallyFilledOrder" start time: Nov 06 09:31 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MatchingEngine.CancelsPartiallyFilledOrder
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MatchingEngine
+[ RUN      ] MatchingEngine.CancelsPartiallyFilledOrder
+[       OK ] MatchingEngine.CancelsPartiallyFilledOrder (0 ms)
+[----------] 1 test from MatchingEngine (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"MatchingEngine.CancelsPartiallyFilledOrder" end time: Nov 06 09:31 India Standard Time
+"MatchingEngine.CancelsPartiallyFilledOrder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/15 Testing: MatchingEngine.RejectsCancellationOfFilledOrder
+9/15 Test: MatchingEngine.RejectsCancellationOfFilledOrder
+Command: "D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/HFT_Tests.exe" "--gtest_filter=MatchingEngine.RejectsCancellationOfFilledOrder" "--gtest_also_run_disabled_tests"
+Directory: D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build
+"MatchingEngine.RejectsCancellationOfFilledOrder" start time: Nov 06 09:31 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = MatchingEngine.RejectsCancellationOfFilledOrder
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from MatchingEngine
+[ RUN      ] MatchingEngine.RejectsCancellationOfFilledOrder
+[       OK ] MatchingEngine.RejectsCancellationOfFilledOrder (0 ms)
+[----------] 1 test from MatchingEngine (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"MatchingEngine.RejectsCancellationOfFilledOrder" end time: Nov 06 09:31 India Standard Time
+"MatchingEngine.RejectsCancellationOfFilledOrder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/15 Testing: MatchingEngine.BuyOrderPartiallyExecutes
+10/15 Test: MatchingEngine.BuyOrderPartiallyExecutes
+Command: "D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/HFT_Tests.exe" "--gtest_filter=MatchingEngine.BuyOrderPartiallyExecutes" "--gtest_also_run_disabled_tests"
+Directory: D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build
+"MatchingEngine.BuyOrderPartiallyExecutes" start time: Nov 06 09:31 India Standard Time
+Output:
+----------------------------------------------------------
+Running main() from D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
 Note: Google Test filter = MatchingEngine.BuyOrderPartiallyExecutes
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
@@ -50,18 +266,18 @@ Note: Google Test filter = MatchingEngine.BuyOrderPartiallyExecutes
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"MatchingEngine.BuyOrderPartiallyExecutes" end time: Nov 06 08:21 India Standard Time
+"MatchingEngine.BuyOrderPartiallyExecutes" end time: Nov 06 09:31 India Standard Time
 "MatchingEngine.BuyOrderPartiallyExecutes" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/7 Testing: OrderValidation.AcceptsValidOrder
-3/7 Test: OrderValidation.AcceptsValidOrder
-Command: "D:/Study/UG/PROJECTS/HFT_Engine/build/HFT_Tests.exe" "--gtest_filter=OrderValidation.AcceptsValidOrder" "--gtest_also_run_disabled_tests"
-Directory: D:/Study/UG/PROJECTS/HFT_Engine/build
-"OrderValidation.AcceptsValidOrder" start time: Nov 06 08:21 India Standard Time
+11/15 Testing: OrderValidation.AcceptsValidOrder
+11/15 Test: OrderValidation.AcceptsValidOrder
+Command: "D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/HFT_Tests.exe" "--gtest_filter=OrderValidation.AcceptsValidOrder" "--gtest_also_run_disabled_tests"
+Directory: D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build
+"OrderValidation.AcceptsValidOrder" start time: Nov 06 09:31 India Standard Time
 Output:
 ----------------------------------------------------------
-Running main() from D:/Study/UG/PROJECTS/HFT_Engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Running main() from D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
 Note: Google Test filter = OrderValidation.AcceptsValidOrder
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
@@ -77,18 +293,18 @@ Note: Google Test filter = OrderValidation.AcceptsValidOrder
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"OrderValidation.AcceptsValidOrder" end time: Nov 06 08:21 India Standard Time
+"OrderValidation.AcceptsValidOrder" end time: Nov 06 09:31 India Standard Time
 "OrderValidation.AcceptsValidOrder" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-4/7 Testing: OrderValidation.RejectsZeroQuantity
-4/7 Test: OrderValidation.RejectsZeroQuantity
-Command: "D:/Study/UG/PROJECTS/HFT_Engine/build/HFT_Tests.exe" "--gtest_filter=OrderValidation.RejectsZeroQuantity" "--gtest_also_run_disabled_tests"
-Directory: D:/Study/UG/PROJECTS/HFT_Engine/build
-"OrderValidation.RejectsZeroQuantity" start time: Nov 06 08:21 India Standard Time
+12/15 Testing: OrderValidation.RejectsZeroQuantity
+12/15 Test: OrderValidation.RejectsZeroQuantity
+Command: "D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/HFT_Tests.exe" "--gtest_filter=OrderValidation.RejectsZeroQuantity" "--gtest_also_run_disabled_tests"
+Directory: D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build
+"OrderValidation.RejectsZeroQuantity" start time: Nov 06 09:31 India Standard Time
 Output:
 ----------------------------------------------------------
-Running main() from D:/Study/UG/PROJECTS/HFT_Engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Running main() from D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
 Note: Google Test filter = OrderValidation.RejectsZeroQuantity
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
@@ -104,18 +320,18 @@ Note: Google Test filter = OrderValidation.RejectsZeroQuantity
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"OrderValidation.RejectsZeroQuantity" end time: Nov 06 08:21 India Standard Time
+"OrderValidation.RejectsZeroQuantity" end time: Nov 06 09:31 India Standard Time
 "OrderValidation.RejectsZeroQuantity" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-5/7 Testing: OrderValidation.RejectsNegativePrice
-5/7 Test: OrderValidation.RejectsNegativePrice
-Command: "D:/Study/UG/PROJECTS/HFT_Engine/build/HFT_Tests.exe" "--gtest_filter=OrderValidation.RejectsNegativePrice" "--gtest_also_run_disabled_tests"
-Directory: D:/Study/UG/PROJECTS/HFT_Engine/build
-"OrderValidation.RejectsNegativePrice" start time: Nov 06 08:21 India Standard Time
+13/15 Testing: OrderValidation.RejectsNegativePrice
+13/15 Test: OrderValidation.RejectsNegativePrice
+Command: "D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/HFT_Tests.exe" "--gtest_filter=OrderValidation.RejectsNegativePrice" "--gtest_also_run_disabled_tests"
+Directory: D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build
+"OrderValidation.RejectsNegativePrice" start time: Nov 06 09:31 India Standard Time
 Output:
 ----------------------------------------------------------
-Running main() from D:/Study/UG/PROJECTS/HFT_Engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Running main() from D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
 Note: Google Test filter = OrderValidation.RejectsNegativePrice
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
@@ -131,18 +347,18 @@ Note: Google Test filter = OrderValidation.RejectsNegativePrice
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"OrderValidation.RejectsNegativePrice" end time: Nov 06 08:21 India Standard Time
+"OrderValidation.RejectsNegativePrice" end time: Nov 06 09:31 India Standard Time
 "OrderValidation.RejectsNegativePrice" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-6/7 Testing: OrderValidation.RejectsDuplicateOrderID
-6/7 Test: OrderValidation.RejectsDuplicateOrderID
-Command: "D:/Study/UG/PROJECTS/HFT_Engine/build/HFT_Tests.exe" "--gtest_filter=OrderValidation.RejectsDuplicateOrderID" "--gtest_also_run_disabled_tests"
-Directory: D:/Study/UG/PROJECTS/HFT_Engine/build
-"OrderValidation.RejectsDuplicateOrderID" start time: Nov 06 08:21 India Standard Time
+14/15 Testing: OrderValidation.RejectsDuplicateOrderID
+14/15 Test: OrderValidation.RejectsDuplicateOrderID
+Command: "D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/HFT_Tests.exe" "--gtest_filter=OrderValidation.RejectsDuplicateOrderID" "--gtest_also_run_disabled_tests"
+Directory: D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build
+"OrderValidation.RejectsDuplicateOrderID" start time: Nov 06 09:31 India Standard Time
 Output:
 ----------------------------------------------------------
-Running main() from D:/Study/UG/PROJECTS/HFT_Engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Running main() from D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
 Note: Google Test filter = OrderValidation.RejectsDuplicateOrderID
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
@@ -158,18 +374,18 @@ Note: Google Test filter = OrderValidation.RejectsDuplicateOrderID
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"OrderValidation.RejectsDuplicateOrderID" end time: Nov 06 08:21 India Standard Time
+"OrderValidation.RejectsDuplicateOrderID" end time: Nov 06 09:31 India Standard Time
 "OrderValidation.RejectsDuplicateOrderID" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-7/7 Testing: OrderValidation.RejectsInvalidSide
-7/7 Test: OrderValidation.RejectsInvalidSide
-Command: "D:/Study/UG/PROJECTS/HFT_Engine/build/HFT_Tests.exe" "--gtest_filter=OrderValidation.RejectsInvalidSide" "--gtest_also_run_disabled_tests"
-Directory: D:/Study/UG/PROJECTS/HFT_Engine/build
-"OrderValidation.RejectsInvalidSide" start time: Nov 06 08:21 India Standard Time
+15/15 Testing: OrderValidation.RejectsInvalidSide
+15/15 Test: OrderValidation.RejectsInvalidSide
+Command: "D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/HFT_Tests.exe" "--gtest_filter=OrderValidation.RejectsInvalidSide" "--gtest_also_run_disabled_tests"
+Directory: D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build
+"OrderValidation.RejectsInvalidSide" start time: Nov 06 09:31 India Standard Time
 Output:
 ----------------------------------------------------------
-Running main() from D:/Study/UG/PROJECTS/HFT_Engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Running main() from D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/_deps/googletest-src/googletest/src/gtest_main.cc
 Note: Google Test filter = OrderValidation.RejectsInvalidSide
 [==========] Running 1 test from 1 test suite.
 [----------] Global test environment set-up.
@@ -185,8 +401,8 @@ Note: Google Test filter = OrderValidation.RejectsInvalidSide
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"OrderValidation.RejectsInvalidSide" end time: Nov 06 08:21 India Standard Time
+"OrderValidation.RejectsInvalidSide" end time: Nov 06 09:31 India Standard Time
 "OrderValidation.RejectsInvalidSide" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Nov 06 08:21 India Standard Time
+End testing: Nov 06 09:31 India Standard Time

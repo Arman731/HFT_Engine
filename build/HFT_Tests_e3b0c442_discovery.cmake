@@ -1,9 +1,9 @@
 include("C:/Users/Admin/AppData/Local/Programs/Python/Python313/Lib/site-packages/cmake/data/share/cmake-4.4/Modules/GoogleTestAddTests.cmake")
 gtest_discover_tests_impl(
   TEST_TARGET [==[HFT_Tests]==]
-  TEST_EXECUTABLE [==[D:/Study/UG/PROJECTS/HFT_Engine/build/HFT_Tests.exe]==]
+  TEST_EXECUTABLE [==[D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/HFT_Tests.exe]==]
   TEST_EXECUTOR [==[]==]
-  TEST_WORKING_DIR [==[D:/Study/UG/PROJECTS/HFT_Engine/build]==]
+  TEST_WORKING_DIR [==[D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build]==]
   TEST_EXTRA_ARGS [==[]==]
   TEST_PROPERTIES [==[]==]
   TEST_PREFIX [==[]==]
@@ -12,9 +12,9 @@ gtest_discover_tests_impl(
   NO_PRETTY_TYPES [==[FALSE]==]
   NO_PRETTY_VALUES [==[FALSE]==]
   TEST_LIST [==[HFT_Tests_TESTS]==]
-  CTEST_FILE [==[D:/Study/UG/PROJECTS/HFT_Engine/build/HFT_Tests_e3b0c442_tests.cmake]==]
+  CTEST_FILE [==[D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build/HFT_Tests_e3b0c442_tests.cmake]==]
   TEST_DISCOVERY_TIMEOUT [==[5]==]
   TEST_DISCOVERY_EXTRA_ARGS [==[]==]
   TEST_XML_OUTPUT_DIR [==[]==]
-  TEST_JSON_OUTPUT_DIR [==[D:/Study/UG/PROJECTS/HFT_Engine/build]==]
+  TEST_JSON_OUTPUT_DIR [==[D:/Study/UG/PROJECTS/HFT_Engine/HFT_Engine/build]==]
 )

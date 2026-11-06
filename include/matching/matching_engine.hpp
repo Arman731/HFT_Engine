@@ -177,6 +177,10 @@ public:
 
             return {OrderStatus::ACCEPTED};
         }
+        
+        bool cancelOrder(OrderId orderId) {
+            return orderBook.cancelOrder(orderId);
+        }
 
     const std::vector<Trade>& getTrades() const {
             return trades;

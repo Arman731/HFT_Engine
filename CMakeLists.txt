@@ -29,6 +29,11 @@ FetchContent_MakeAvailable(googletest)
 add_executable(HFT_Tests
     tests/unit/order_validation_test.cpp
     tests/unit/matching_engine_test.cpp
+    tests/unit/order_lifecycle_test.cpp
+    tests/unit/execution_report_test.cpp
+    tests/unit/clock_integration_test.cpp
+    tests/unit/event_engine_test.cpp
+    tests/unit/event_logging_test.cpp
 )
 
 target_include_directories(HFT_Tests PRIVATE include)

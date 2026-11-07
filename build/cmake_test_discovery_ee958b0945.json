@@ -1,59 +1,336 @@
 {
-  "tests": 15,
+  "tests": 62,
   "name": "AllTests",
   "testsuites": [
+    {
+      "name": "EventLoggingTest",
+      "tests": 7,
+      "testsuite": [
+        {
+          "name": "LoggerWritesEventToCSV",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_logging_test.cpp",
+          "line": 31
+        },
+        {
+          "name": "LoggerAppendsWithoutDuplicatingHeader",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_logging_test.cpp",
+          "line": 53
+        },
+        {
+          "name": "ReaderReconstructsEvents",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_logging_test.cpp",
+          "line": 84
+        },
+        {
+          "name": "ReaderRejectsInvalidHeader",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_logging_test.cpp",
+          "line": 118
+        },
+        {
+          "name": "ReaderRejectsMalformedRecord",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_logging_test.cpp",
+          "line": 128
+        },
+        {
+          "name": "EventEngineLogsPublishedEvents",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_logging_test.cpp",
+          "line": 142
+        },
+        {
+          "name": "ReplayerFeedsEventsIntoEngine",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_logging_test.cpp",
+          "line": 173
+        }
+      ]
+    },
+    {
+      "name": "EventQueueTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "StartsEmpty",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_engine_test.cpp",
+          "line": 11
+        },
+        {
+          "name": "PushIncreasesSize",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_engine_test.cpp",
+          "line": 18
+        },
+        {
+          "name": "PopReturnsOldestEvent",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_engine_test.cpp",
+          "line": 28
+        }
+      ]
+    },
+    {
+      "name": "EventEngineTest",
+      "tests": 15,
+      "testsuite": [
+        {
+          "name": "PublishAddsEvent",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_engine_test.cpp",
+          "line": 45
+        },
+        {
+          "name": "RetrievesPublishedEvent",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_engine_test.cpp",
+          "line": 55
+        },
+        {
+          "name": "SubscriberReceivesMatchingEvent",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_engine_test.cpp",
+          "line": 81
+        },
+        {
+          "name": "HandlerDoesNotReceiveUnrelatedEvent",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_engine_test.cpp",
+          "line": 95
+        },
+        {
+          "name": "MultipleHandlersReceiveSameEvent",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_engine_test.cpp",
+          "line": 108
+        },
+        {
+          "name": "ProcessAllEventsDispatchesEverything",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_engine_test.cpp",
+          "line": 124
+        },
+        {
+          "name": "ProcessingEmptyQueueDoesNotCrash",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_engine_test.cpp",
+          "line": 141
+        },
+        {
+          "name": "DuplicateSubscriptionIsIgnored",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_engine_test.cpp",
+          "line": 190
+        },
+        {
+          "name": "UnsubscribeStopsEventDelivery",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_engine_test.cpp",
+          "line": 203
+        },
+        {
+          "name": "UnsubscribeUnregisteredHandlerDoesNothing",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_engine_test.cpp",
+          "line": 216
+        },
+        {
+          "name": "UnsubscribeOnlyAffectsSpecifiedEventType",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_engine_test.cpp",
+          "line": 225
+        },
+        {
+          "name": "ProcessesEventsPublishedByHandlers",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_engine_test.cpp",
+          "line": 243
+        },
+        {
+          "name": "ProcessEventsRespectsMaximumLimit",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_engine_test.cpp",
+          "line": 261
+        },
+        {
+          "name": "ProcessEventsWithZeroLimitProcessesNothing",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_engine_test.cpp",
+          "line": 278
+        },
+        {
+          "name": "SelfUnsubscriptionDuringDispatchIsSafe",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/event_engine_test.cpp",
+          "line": 292
+        }
+      ]
+    },
+    {
+      "name": "ClockTest",
+      "tests": 4,
+      "testsuite": [
+        {
+          "name": "SimulatedClockStartsAtSpecifiedTime",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/clock_integration_test.cpp",
+          "line": 10
+        },
+        {
+          "name": "SimulatedClockCanAdvance",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/clock_integration_test.cpp",
+          "line": 16
+        },
+        {
+          "name": "SimulatedClockCanSetTime",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/clock_integration_test.cpp",
+          "line": 24
+        },
+        {
+          "name": "SystemClockReturnsNonZeroTimestamp",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/clock_integration_test.cpp",
+          "line": 32
+        }
+      ]
+    },
+    {
+      "name": "ClockIntegrationTest",
+      "tests": 3,
+      "testsuite": [
+        {
+          "name": "AcceptanceReportUsesInjectedClock",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/clock_integration_test.cpp",
+          "line": 38
+        },
+        {
+          "name": "FillReportsUseInjectedClock",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/clock_integration_test.cpp",
+          "line": 54
+        },
+        {
+          "name": "CancellationUsesCurrentClockTime",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/clock_integration_test.cpp",
+          "line": 73
+        }
+      ]
+    },
+    {
+      "name": "ExecutionReportTest",
+      "tests": 7,
+      "testsuite": [
+        {
+          "name": "AcceptedOrderGeneratesAcceptanceReport",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/execution_report_test.cpp",
+          "line": 23
+        },
+        {
+          "name": "FullyFilledOrderGeneratesFillReports",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/execution_report_test.cpp",
+          "line": 36
+        },
+        {
+          "name": "PartialFillGeneratesCorrectReport",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/execution_report_test.cpp",
+          "line": 57
+        },
+        {
+          "name": "CancelledOrderGeneratesCancellationReport",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/execution_report_test.cpp",
+          "line": 81
+        },
+        {
+          "name": "InvalidOrderGeneratesRejectionReport",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/execution_report_test.cpp",
+          "line": 95
+        },
+        {
+          "name": "ReportsPreserveExecutionPrice",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/execution_report_test.cpp",
+          "line": 106
+        },
+        {
+          "name": "DuplicateOrderGeneratesRejectionReport",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/execution_report_test.cpp",
+          "line": 118
+        }
+      ]
+    },
+    {
+      "name": "OrderLifecycleTest",
+      "tests": 8,
+      "testsuite": [
+        {
+          "name": "NewOrderStartsAsAccepted",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/order_lifecycle_test.cpp",
+          "line": 24
+        },
+        {
+          "name": "FullyFilledOrderHasFilledStatus",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/order_lifecycle_test.cpp",
+          "line": 38
+        },
+        {
+          "name": "RestingOrderCanBecomePartiallyFilled",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/order_lifecycle_test.cpp",
+          "line": 50
+        },
+        {
+          "name": "IncomingOrderCanBePartiallyFilled",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/order_lifecycle_test.cpp",
+          "line": 62
+        },
+        {
+          "name": "PartiallyFilledOrderCanBeCancelled",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/order_lifecycle_test.cpp",
+          "line": 74
+        },
+        {
+          "name": "InvalidOrderIsMarkedRejected",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/order_lifecycle_test.cpp",
+          "line": 88
+        },
+        {
+          "name": "FilledOrderCannotBeCancelled",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/order_lifecycle_test.cpp",
+          "line": 101
+        },
+        {
+          "name": "UnknownOrderHasNoLifecycle",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/order_lifecycle_test.cpp",
+          "line": 113
+        }
+      ]
+    },
     {
       "name": "MatchingEngine",
       "tests": 10,
       "testsuite": [
         {
           "name": "BuyOrderMatchesSellOrder",
-          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/matching_engine_test.cpp",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/matching_engine_test.cpp",
           "line": 7
         },
         {
           "name": "MatchesBestPriceFirst",
-          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/matching_engine_test.cpp",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/matching_engine_test.cpp",
           "line": 50
         },
         {
           "name": "MatchesOldestOrderFirst",
-          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/matching_engine_test.cpp",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/matching_engine_test.cpp",
           "line": 89
         },
         {
           "name": "ExecutesAgainstMultipleOrders",
-          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/matching_engine_test.cpp",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/matching_engine_test.cpp",
           "line": 131
         },
         {
           "name": "CancelsBuyOrder",
-          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/matching_engine_test.cpp",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/matching_engine_test.cpp",
           "line": 178
         },
         {
           "name": "CancelsSellOrder",
-          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/matching_engine_test.cpp",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/matching_engine_test.cpp",
           "line": 196
         },
         {
           "name": "RejectsCancellationOfUnknownOrder",
-          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/matching_engine_test.cpp",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/matching_engine_test.cpp",
           "line": 214
         },
         {
           "name": "CancelsPartiallyFilledOrder",
-          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/matching_engine_test.cpp",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/matching_engine_test.cpp",
           "line": 222
         },
         {
           "name": "RejectsCancellationOfFilledOrder",
-          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/matching_engine_test.cpp",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/matching_engine_test.cpp",
           "line": 253
         },
         {
           "name": "BuyOrderPartiallyExecutes",
-          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/order_validation_test.cpp",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/order_validation_test.cpp",
           "line": 127
         }
       ]
@@ -64,27 +341,27 @@
       "testsuite": [
         {
           "name": "AcceptsValidOrder",
-          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/order_validation_test.cpp",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/order_validation_test.cpp",
           "line": 6
         },
         {
           "name": "RejectsZeroQuantity",
-          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/order_validation_test.cpp",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/order_validation_test.cpp",
           "line": 28
         },
         {
           "name": "RejectsNegativePrice",
-          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/order_validation_test.cpp",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/order_validation_test.cpp",
           "line": 48
         },
         {
           "name": "RejectsDuplicateOrderID",
-          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/order_validation_test.cpp",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/order_validation_test.cpp",
           "line": 68
         },
         {
           "name": "RejectsInvalidSide",
-          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/order_validation_test.cpp",
+          "file": "D:\/Study\/UG\/PROJECTS\/HFT_Engine\/HFT_Engine\/tests\/unit\/order_validation_test.cpp",
           "line": 102
         }
       ]

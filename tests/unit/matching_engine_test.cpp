@@ -1,8 +1,8 @@
 
 #include <gtest/gtest.h>
 
-#include "core/order.hpp"
-#include "matching/matching_engine.hpp"
+#include "hft/core/order.hpp"
+#include "hft/execution/simulator/matching_engine.hpp"
 
 TEST(MatchingEngine, BuyOrderMatchesSellOrder) {
 

@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Main application
 add_executable(HFT_Engine
-    src/main.cpp
+    apps/simulator/main.cpp
 )
 
 target_include_directories(HFT_Engine PRIVATE include)
@@ -27,8 +27,8 @@ FetchContent_MakeAvailable(googletest)
 
 # Test executable
 add_executable(HFT_Tests
-    tests/order_validation_test.cpp
-    tests/matching_engine_test.cpp
+    tests/unit/order_validation_test.cpp
+    tests/unit/matching_engine_test.cpp
 )
 
 target_include_directories(HFT_Tests PRIVATE include)

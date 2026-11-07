@@ -2,9 +2,9 @@
 
 #include <vector>
 
-#include "core/order.hpp"
-#include "core/trade.hpp"
-#include "orderbook/order_book.hpp"
+#include "hft/core/order.hpp"
+#include "hft/core/trade.hpp"
+#include "hft/execution/simulator/order_book.hpp"
 
 #include <algorithm>
 
@@ -12,7 +12,7 @@
 
 #include <unordered_set>
 
-#include "core/order_result.hpp"
+#include "hft/core/order_result.hpp"
 
 namespace hft {
 
